@@ -1,12 +1,12 @@
 import React from "react";
 import "../assets/styles/itemListContainer.css";
 
-const ItemListContainer = ({ mensaje }) => {
+function ItemListContainer({ message }) {
   return (
     <div className="item-list-container">
-      <h1>{mensaje}</h1>
+      <h2>{message}</h2>
     </div>
   );
-};
+}
 
 export default ItemListContainer;

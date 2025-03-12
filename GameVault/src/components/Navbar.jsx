@@ -1,31 +1,25 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 import "../assets/styles/navbar.css";
 
 const Navbar = () => {
-  const location = useLocation();
-
   return (
     <nav className="navbar">
-      <div className="logo">GameVault</div>
-      <ul className="nav-links">
-        <li className={location.pathname === "/monitores" ? "active" : ""}>
-          <Link to="/monitores">Monitores</Link>
-        </li>
-        <li className={location.pathname === "/consolas" ? "active" : ""}>
-          <Link to="/consolas">Consolas</Link>
-        </li>
-        <li className={location.pathname === "/computadoras" ? "active" : ""}>
-          <Link to="/computadoras">Computadoras</Link>
-        </li>
-        <li className={location.pathname === "/accesorios" ? "active" : ""}>
-          <Link to="/accesorios">Accesorios</Link>
-        </li>
-      </ul>
-      <div className="nav-icons">
-        <CartWidget />
-        <Link to="/login" className="login-icon">Iniciar Sesión</Link>
+      <Link to="/" className="logo">
+        GameVault
+      </Link>
+      <div className="nav-links">
+        <Link to="/monitores">Monitores</Link>
+        <Link to="/consolas">Consolas</Link>
+        <Link to="/computadoras">Computadoras</Link>
+        <Link to="/accesorios">Accesorios</Link>
+      </div>
+      <div className="nav-actions">
+        <Link to="/carrito" className="cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+      </svg>
+        </Link>
       </div>
     </nav>
   );

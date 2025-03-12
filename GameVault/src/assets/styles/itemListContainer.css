@@ -1,5 +1,14 @@
 .item-list-container {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .item-list-container {
+    font-size: 18px;
+    padding: 10px;
   }
-  
+}
