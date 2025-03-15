@@ -1,9 +1,17 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #10243a; /* Azul oscuro sutil */
+    background-color: #ffffff; /* Azul oscuro sutil */
     margin: 0;
     padding: 0;
     color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000; /* Celeste brillante */
 }
 
 h1 {

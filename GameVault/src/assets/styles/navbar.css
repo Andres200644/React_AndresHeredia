@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #0b1622;
+  background-color: #002c5a;
   color: white;
 }
 
@@ -38,6 +38,7 @@
 .cart-icon {
   position: relative;
   transition: transform 0.3s ease-in-out;
+  color: white;
 }
 
 .cart-icon:hover {
