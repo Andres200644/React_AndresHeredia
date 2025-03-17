@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Azul oscuro sutil */
+    background-color: #08004e; 
     margin: 0;
     padding: 0;
     color: white;
@@ -11,7 +11,7 @@ h2 {
     margin: 40px 0;
     font-size: 2rem;
     font-weight: bold;
-    color: #000000; /* Celeste brillante */
+    color: #ffffff; 
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
     margin: 40px 0;
     font-size: 2rem;
     font-weight: bold;
-    color: #64ffda; /* Celeste brillante */
+    color: #64ffda; 
 }
 
 .container {
